@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe game</title>
+
+  <link rel='stylesheet prefetch' href='https://getbootstrap.com/2.3.2/assets/css/bootstrap.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Sorry for not using proper bootstrap 2.x -ish style, I don't focus on UI when working -->
+  <div id="game-setup" style="background-color: tomato" type>
+    <div>
+      <h5 style="color:white;">Gameplay Setup </h5>
+    </div>
+
+    <div>
+      <input type="text" input type="number" id="gridSize" maxlength="2" value="3" />
+      <!-- onclick="changeGrid();" -->
+      <button class="btn btn-primary" id="btnSetup">Change Grid</button>
+    </div>
+  </div>
+
+
+  <div id="tic-tac-toe">
+    <div class="">
+      <div class="row" style="margin:0;">
+        <h1>Tic Tac Toe</h1>
+      </div>
+
+      <div class="row" style="text-align:center; margin:0;">
+          <div style="margin: 0 auto;">
+            <div>
+              <div class="input-prepend input-append">
+                <span class="add-on win_text">O won</span><strong id="o_win" class="win_times add-on">0</strong><span
+                  class="add-on">time(s)</span>
+              </div>
+            </div>
+  
+            <div class="input-prepend input-append">
+              <span class="add-on win_text">X won</span><strong id="x_win" class="win_times add-on">0</strong><span
+                class="add-on">time(s)</span>
+            </div>
+          </div>
+  
+        </div>
+
+
+      <ul class="row" id="game" style="margin:0;">
+        <!-- <li id="one" class="btn span1">+</li>
+        <li id="two" class="btn span1">+</li>
+        <li id="three" class="btn span1">+</li>
+        <li id="four" class="btn span1">+</li>
+        <li id="five" class="btn span1">+</li>
+        <li id="six" class="btn span1">+</li>
+        <li id="seven" class="btn span1">+</li>
+        <li id="eight" class="btn span1">+</li>
+        <li id="nine" class="btn span1">+</li> -->
+      </ul>
+
+      <div class="clr">&nbsp;</div>
+      
+      <!-- done at 10:05 didn't properly align this -->
+      <div class="row"><a href="#" id="reset" class="btn-success btn span3">Restart</a></div>
+    </div>
+  </div>
+
+  <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
